@@ -25,7 +25,7 @@ namespace WebServer
                 return;
             }
 
-            Console.WriteLine($"Authorization = {context.Request.Headers["Authorizationn"]}");
+            Console.WriteLine($"Authorization = {context.Request.Headers["Authorization"]}");
             Console.WriteLine($"CustomAuthorization = {context.Request.Headers["CustomAuthorization"]}");
 
             WebSocket socket = await context.WebSockets.AcceptWebSocketAsync();
